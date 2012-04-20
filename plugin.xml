@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.lagaffe.mango.plugins.sociallinks" name="Social Links" version="1.0.1" provider-name="Guust Nieuwenhuis, Lagaffe.be" class="sociallinks.Handler">
+	<description>
+		<![CDATA[ 
+			<p>
+			Social Links adds a pod to your blog that displays links to social websites like Twitter, Facebook, LinkedIn, ...
+			</p>
+			<p>
+			Developed by: <a href="http://www.lagaffe.be" target="_blank">Guust Nieuwenhuis</a>
+			<br />
+			Project home: <a href="http://sociallinks.riaforge.org" target="_blank">http://sociallinks.riaforge.org</a>
+			</p>
+		 ]]>
+	</description>
+	<listens>
+		<event name="getPods" type="synch" priority="5" />
+		<event name="beforeHtmlHeadEnd" type="synch" priority="5" />
+		<event name="beforePostContentEnd" type="synch" priority="5" />
+	</listens>
+	<listensAdmin>
+		<event name="settingsNav" type="synch" priority="5" />
+		<event name="showSocialLinksSettings" type="synch" priority="5" />
+		<event name="getPodsList" type="synch" priority="1" />
+	</listensAdmin>
+	<assets>
+		<asset dir="assets/icons" dest="images" />
+	</assets>
+</plugin>
