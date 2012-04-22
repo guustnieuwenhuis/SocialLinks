@@ -40,6 +40,18 @@
 		<cfset variables.defaults.socialLinksVimeoUsername = "" />
 		<cfset variables.defaults.socialLinksShowYoutube = false />
 		<cfset variables.defaults.socialLinksYoutubeUsername = "" />
+		<cfset variables.defaults.socialLinksShowPosterous = false />
+		<cfset variables.defaults.socialLinksPosterousUsername = "" />
+		<cfset variables.defaults.socialLinksShowTumblr = false />
+		<cfset variables.defaults.socialLinksTumblrUsername = "" />
+		<cfset variables.defaults.socialLinksShowDeviantart = false />
+		<cfset variables.defaults.socialLinksDeviantartUsername = "" />
+		<cfset variables.defaults.socialLinksShowGoogleplus = false />
+		<cfset variables.defaults.socialLinksGoogleplusUsername = "" />
+		<cfset variables.defaults.socialLinksShowSkype = false />
+		<cfset variables.defaults.socialLinksSkypeUsername = "" />
+		<cfset variables.defaults.socialLinksShowPinterest = false />
+		<cfset variables.defaults.socialLinksPinterestUsername = "" />
 		
 		<cfset initSettings(argumentCollection = variables.defaults) />
              
@@ -142,6 +154,37 @@
 									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/youtube.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
 									</a>
 								</cfif>
+
+								<cfif this.getSetting("socialLinksShowPosterous") >
+									<a href="http://#this.getSetting("socialLinksPosterousUsername")#.posterous.com/" target="_blank">
+									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/posterous.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
+									</a>
+								</cfif>
+								<cfif this.getSetting("socialLinksShowTumblr") >
+									<a href="http://#this.getSetting("socialLinksTumblrUsername")#.tumblr.com/" target="_blank">
+									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/tumblr.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
+									</a>
+								</cfif>
+								<cfif this.getSetting("socialLinksShowDeviantart") >
+									<a href="http://#this.getSetting("socialLinksDeviantartUsername")#.deviantart.com/" target="_blank">
+									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/deviantart.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
+									</a>
+								</cfif>
+								<cfif this.getSetting("socialLinksShowGoogleplus") >
+									<a href="https://plus.google.com/#this.getSetting("socialLinksGoogleplusUsername")#/about" target="_blank">
+									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/googleplus.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
+									</a>
+								</cfif>
+								<cfif this.getSetting("socialLinksShowSkype") >
+									<a href="skype:#this.getSetting("socialLinksSkypeUsername")#" target="_blank">
+									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/skype.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
+									</a>
+								</cfif>
+								<cfif this.getSetting("socialLinksShowPinterest") >
+									<a href="http://pinterest.com/#this.getSetting("socialLinksPinterestUsername")#" target="_blank">
+									<img src="#request.blogManager.getBlog().getUrl()#assets/plugins/sociallinks/images/icons/#getSetting("socialLinksIconSet")#/pinterest.png" width="#getSetting("socialLinksIconSize")#" height="#getSetting("socialLinksIconSize")#" />
+									</a>
+								</cfif>
 							</cfoutput>
 						</cfsavecontent>
 						
@@ -212,6 +255,18 @@
 							<cfparam name="data.externaldata.socialLinksVimeoUsername" default="0" />
 							<cfparam name="data.externaldata.socialLinksShowYoutube" default="0" />
 							<cfparam name="data.externaldata.socialLinksYoutubeUsername" default="0" />
+							<cfparam name="data.externaldata.socialLinksShowPosterous" default="0" />
+							<cfparam name="data.externaldata.socialLinksPosterousUsername" default="0" />
+							<cfparam name="data.externaldata.socialLinksShowTumblr" default="0" />
+							<cfparam name="data.externaldata.socialLinksTumblrUsername" default="0" />
+							<cfparam name="data.externaldata.socialLinksShowDeviantart" default="0" />
+							<cfparam name="data.externaldata.socialLinksDeviantartUsername" default="0" />
+							<cfparam name="data.externaldata.socialLinksShowGoogleplus" default="0" />
+							<cfparam name="data.externaldata.socialLinksGoogleplusUsername" default="0" />
+							<cfparam name="data.externaldata.socialLinksShowSkype" default="0" />
+							<cfparam name="data.externaldata.socialLinksSkypeUsername" default="0" />
+							<cfparam name="data.externaldata.socialLinksShowPinterest" default="0" />
+							<cfparam name="data.externaldata.socialLinksPinterestUsername" default="0" />
 							
 							<cfset LOCAL.newSettings = StructNew() />
 							<cfloop collection="#variables.defaults#" item="LOCAL.key">

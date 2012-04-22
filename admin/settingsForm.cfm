@@ -68,6 +68,25 @@
 	
 		<legend>
 			<label>
+				<input type="checkbox" id="socialLinksShowDeviantart" name="socialLinksShowDeviantart" value="true"<cfif getSetting("socialLinksShowDeviantart")> checked="checked"</cfif>/>
+				Deviant Art
+			</label>
+		</legend>
+		
+		<p>
+			<label for="socialLinksDeviantartUsername">Deviant Art username:</label>
+			<span class="hint"><a href="http://#this.getSetting("socialLinksDeviantartUsername")#.deviantart.com/" target="_blank" >http://#this.getSetting("socialLinksDeviantartUsername")#.deviantart.com/</a></span>
+			<span class="field">
+				<input type="text" id="socialLinksDeviantartUsername" name="socialLinksDeviantartUsername" value="#getSetting("socialLinksDeviantartUsername")#" size="20"/>
+			</span>
+		</p>
+		
+	</fieldset>
+
+	<fieldset>
+	
+		<legend>
+			<label>
 				<input type="checkbox" id="socialLinksShowDigg" name="socialLinksShowDigg" value="true"<cfif getSetting("socialLinksShowDigg")> checked="checked"</cfif>/>
 				Digg
 			</label>
@@ -116,6 +135,25 @@
 			<span class="hint"><a href="http://flickr.com/photos/#this.getSetting("socialLinksFlickrUsername")#" target="_blank">http://flickr.com/photos/#this.getSetting("socialLinksFlickrUsername")#</a></span>
 			<span class="field">
 				<input type="text" id="socialLinksFlickrUsername" name="socialLinksFlickrUsername" value="#getSetting("socialLinksFlickrUsername")#" size="20"/>
+			</span>
+		</p>
+		
+	</fieldset>
+
+	<fieldset>
+	
+		<legend>
+			<label>
+				<input type="checkbox" id="socialLinksShowGoogleplus" name="socialLinksShowGoogleplus" value="true"<cfif getSetting("socialLinksShowGoogleplus")> checked="checked"</cfif>/>
+				Google+
+			</label>
+		</legend>
+		
+		<p>
+			<label for="socialLinksGoogleplusUsername">Google+ id (you can find this in the url of you Google+ profile):</label>
+			<span class="hint"><a href="https://plus.google.com/#this.getSetting("socialLinksGoogleplusUsername")#/about" target="_blank" >https://plus.google.com/#this.getSetting("socialLinksGoogleplusUsername")#/about</a></span>
+			<span class="field">
+				<input type="text" id="socialLinksGoogleplusUsername" name="socialLinksGoogleplusUsername" value="#getSetting("socialLinksGoogleplusUsername")#" size="20"/>
 			</span>
 		</p>
 		
@@ -182,6 +220,44 @@
 	
 		<legend>
 			<label>
+				<input type="checkbox" id="socialLinksShowPinterest" name="socialLinksShowPinterest" value="true"<cfif getSetting("socialLinksShowPinterest")> checked="checked"</cfif>/>
+				Pinterest
+			</label>
+		</legend>
+		
+		<p>
+			<label for="socialLinksPinterestUsername">Pinterest username:</label>
+			<span class="hint"><a href="http://pinterest.com/#this.getSetting("socialLinksPinterestUsername")#" target="_blank" >http://pinterest.com/#this.getSetting("socialLinksPinterestUsername")#</a></span>
+			<span class="field">
+				<input type="text" id="socialLinksPinterestUsername" name="socialLinksPinterestUsername" value="#getSetting("socialLinksPinterestUsername")#" size="20"/>
+			</span>
+		</p>
+		
+	</fieldset>
+
+	<fieldset>
+	
+		<legend>
+			<label>
+				<input type="checkbox" id="socialLinksShowPosterous" name="socialLinksShowPosterous" value="true"<cfif getSetting("socialLinksShowPosterous")> checked="checked"</cfif>/>
+				Posterous
+			</label>
+		</legend>
+		
+		<p>
+			<label for="socialLinksPosterousUsername">Posterous username:</label>
+			<span class="hint"><a href="http://#this.getSetting("socialLinksPosterousUsername")#.posterous.com/" target="_blank" >http://#this.getSetting("socialLinksPosterousUsername")#.posterous.com/</a></span>
+			<span class="field">
+				<input type="text" id="socialLinksPosterousUsername" name="socialLinksPosterousUsername" value="#getSetting("socialLinksPosterousUsername")#" size="20"/>
+			</span>
+		</p>
+		
+	</fieldset>
+
+	<fieldset>
+	
+		<legend>
+			<label>
 				<input type="checkbox" id="socialLinksShowReddit" name="socialLinksShowReddit" value="true"<cfif getSetting("socialLinksShowReddit")> checked="checked"</cfif>/>
 				Reddit
 			</label>
@@ -192,6 +268,25 @@
 			<span class="hint"><a href="http://www.reddit.com/user/#this.getSetting("socialLinksRedditUsername")#" target="_blank" >http://www.reddit.com/user/#this.getSetting("socialLinksRedditUsername")#</a></span>
 			<span class="field">
 				<input type="text" id="socialLinksRedditUsername" name="socialLinksRedditUsername" value="#getSetting("socialLinksRedditUsername")#" size="20"/>
+			</span>
+		</p>
+		
+	</fieldset>
+
+	<fieldset>
+	
+		<legend>
+			<label>
+				<input type="checkbox" id="socialLinksShowSkype" name="socialLinksShowSkype" value="true"<cfif getSetting("socialLinksShowSkype")> checked="checked"</cfif>/>
+				Skype
+			</label>
+		</legend>
+		
+		<p>
+			<label for="socialLinksSkypeUsername">Skype username:</label>
+			<span class="hint"><a href="skype:#this.getSetting("socialLinksSkypeUsername")#" target="_blank" >skype:#this.getSetting("socialLinksSkypeUsername")#</a></span>
+			<span class="field">
+				<input type="text" id="socialLinksSkypeUsername" name="socialLinksSkypeUsername" value="#getSetting("socialLinksSkypeUsername")#" size="20"/>
 			</span>
 		</p>
 		
@@ -230,6 +325,25 @@
 			<span class="hint"><a href="http://technorati.com/people/#this.getSetting("socialLinksTechnoratiUsername")#" target="_blank" >http://technorati.com/people/#this.getSetting("socialLinksTechnoratiUsername")#</a></span>
 			<span class="field">
 				<input type="text" id="socialLinksTechnoratiUsername" name="socialLinksTechnoratiUsername" value="#getSetting("socialLinksTechnoratiUsername")#" size="20"/>
+			</span>
+		</p>
+		
+	</fieldset>
+
+	<fieldset>
+	
+		<legend>
+			<label>
+				<input type="checkbox" id="socialLinksShowTumblr" name="socialLinksShowTumblr" value="true"<cfif getSetting("socialLinksShowTumblr")> checked="checked"</cfif>/>
+				Tumblr
+			</label>
+		</legend>
+		
+		<p>
+			<label for="socialLinksTumblrUsername">Tumblr username:</label>
+			<span class="hint"><a href="http://#this.getSetting("socialLinksTumblrUsername")#.tumblr.com/" target="_blank" >http://#this.getSetting("socialLinksTumblrUsername")#.tumblr.com/</a></span>
+			<span class="field">
+				<input type="text" id="socialLinksTumblrUsername" name="socialLinksTumblrUsername" value="#getSetting("socialLinksTumblrUsername")#" size="20"/>
 			</span>
 		</p>
 		

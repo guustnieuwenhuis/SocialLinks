@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="com.lagaffe.mango.plugins.sociallinks" name="Social Links" version="1.0.1" provider-name="Guust Nieuwenhuis, Lagaffe.be" class="sociallinks.Handler">
+<plugin id="com.lagaffe.mango.plugins.sociallinks" name="Social Links" version="1.1.0" provider-name="Guust Nieuwenhuis, Lagaffe.be" class="sociallinks.Handler">
 	<description>
 		<![CDATA[ 
 			<p>
